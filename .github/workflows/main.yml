@@ -1,0 +1,26 @@
+# TODO: Students must fix workflow
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          echo "TODO: pip install -r requirements"
+
+      - name: Run tests
+        run: |
+          echo "TODO: run test script"
+
+      - name: Build Docker image
+        run: |
+          echo "TODO: docker build"
